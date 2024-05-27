@@ -6,14 +6,8 @@
   "hostRequirements": {
     "cpus": 4
   },
-  "waitFor": "onCreateCommand",
-  "updateContentCommand": "cargo build",
-  "postCreateCommand": "",
-  "postAttachCommand": {
-    "server": "cargo run"
-  },
   "portsAttributes": {
-    "8888": {
+    "8000": {
       "label": "Application",
       "onAutoForward": "openPreview"
     }
@@ -25,5 +19,7 @@
       ]
     }
   },
-  "forwardPorts": [8888]
+  "forwardPorts": [
+    8000
+  ]
 }
