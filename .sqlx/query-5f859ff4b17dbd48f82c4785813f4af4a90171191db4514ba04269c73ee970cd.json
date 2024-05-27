@@ -1,6 +1,6 @@
 {
   "db_name": "SQLite",
-  "query": "select id, pw_hash from User where email = ? or username = ?",
+  "query": "select id, pw_hash from User where email = ? or username = ? or id = ?",
   "describe": {
     "columns": [
       {
@@ -15,12 +15,12 @@
       }
     ],
     "parameters": {
-      "Right": 2
+      "Right": 3
     },
     "nullable": [
       false,
       false
     ]
   },
-  "hash": "c9fed501929a82b4caab32c44eddf8c400f9e9dc8dcc7ee3373bbd219f0d58f5"
+  "hash": "5f859ff4b17dbd48f82c4785813f4af4a90171191db4514ba04269c73ee970cd"
 }

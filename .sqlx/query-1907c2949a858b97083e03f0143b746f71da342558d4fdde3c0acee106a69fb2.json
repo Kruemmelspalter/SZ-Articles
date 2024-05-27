@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "select pw_hash from User where id = ?",
+  "describe": {
+    "columns": [
+      {
+        "name": "pw_hash",
+        "ordinal": 0,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 1
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "1907c2949a858b97083e03f0143b746f71da342558d4fdde3c0acee106a69fb2"
+}

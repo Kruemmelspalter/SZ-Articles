@@ -106,7 +106,7 @@ pub async fn register(
 
     let pw_hash = authentication::hash_password(data.password);
     match query!(
-        "insert into User (username, pw_hash, email, displayname) values (?, ?, ?, ?) returning id",
+        "insert into User (username, pw_hash, email, display_name) values (?, ?, ?, ?) returning id",
         data.username,
         pw_hash,
         data.email,
